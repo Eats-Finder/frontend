@@ -1,16 +1,19 @@
 "use client"
-import { colors } from "@/styles/styleCore"
+import { SbuttonSize, Scenter, Scolors } from "@/styles/styleCore"
 import React from "react"
 
-interface IButton extends React.HTMLAttributes<HTMLButtonElement> {
+interface IButton extends React.ComponentPropsWithoutRef<"button"> {
   content: string
-  disabled?: boolean
+  customStyle?: string
 }
 
-const Button = ({ content, disabled, ...props }: IButton) => {
-  const color = `${colors.primary[800]}`
+const Button = ({ content, disabled, customStyle, ...props }: IButton) => {
   return (
-    <button className={"bg-primary-400"} disabled={disabled} {...props}>
+    <button
+      className={`${Scenter} ${SbuttonSize.s} ${Scolors.bg.primary[400]} ${Scolors.text.white} rounded-[16px] typo-body-16 ${customStyle}`}
+      disabled={disabled}
+      {...props}
+    >
       {content}
     </button>
   )

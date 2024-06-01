@@ -1,10 +1,19 @@
-import React, { ButtonHTMLAttributes } from "react"
+"use client"
+import { colors } from "@/styles/styleCore"
+import React from "react"
 
-interface IButton extends React.HTMLAttributes<HTMLButtonElement> {}
+interface IButton extends React.HTMLAttributes<HTMLButtonElement> {
+  content: string
+  disabled?: boolean
+}
 
-const Button = ({ ...props }: IButton) => {
-  // const
-  return <div>Button</div>
+const Button = ({ content, disabled, ...props }: IButton) => {
+  const color = `${colors.primary[800]}`
+  return (
+    <button className={"bg-primary-400"} disabled={disabled} {...props}>
+      {content}
+    </button>
+  )
 }
 
 export default Button

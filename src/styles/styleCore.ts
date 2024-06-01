@@ -1,0 +1,50 @@
+const colors = {
+  primary: {
+    25: "bg-primary-25",
+    50: "bg-primary-50",
+    100: "bg-primary-100",
+    200: "bg-primary-200",
+    300: "bg-primary-300",
+    400: "bg-primary-400",
+    500: "bg-primary-500",
+    600: "bg-primary-600",
+    700: "bg-primary-700",
+    800: "bg-primary-800",
+    900: "bg-primary-900",
+  },
+  gray: {
+    50: "bg-gray-50",
+    100: "bg-gray-100",
+    200: "bg-gray-200",
+    300: "bg-gray-300",
+    400: "bg-gray-400",
+    500: "bg-gray-500",
+    600: "bg-gray-600",
+    700: "bg-gray-700",
+    800: "bg-gray-800",
+    900: "bg-gray-900",
+  },
+  error: "bg-error",
+  white: "bg-white",
+  green: "bg-green",
+} as const
+
+const fontSize = {
+  12: "typo-body-12",
+  14: "typo-body-14",
+  16: "typo-body-16",
+  18: "typo-body-18",
+  20: "typo-body-20",
+  22: "typo-body-22",
+  24: "typo-body-24",
+  26: "typo-body-26",
+  28: "typo-body-28",
+  30: "typo-body-30",
+  32: "typo-body-32",
+  34: "typo-body-34",
+  36: "typo-body-36",
+  38: "typo-body-38",
+  40: "typo-body-40",
+} as const
+
+export { colors, fontSize }

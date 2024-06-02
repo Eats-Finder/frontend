@@ -87,4 +87,6 @@ const SbuttonSize = {
 
 const Scenter = "flex items-center justify-center"
 
-export { Scolors, SfontSize, Scenter, SbuttonSize }
+const Stransition = "transition-all"
+
+export { Scolors, SfontSize, Scenter, SbuttonSize, Stransition }

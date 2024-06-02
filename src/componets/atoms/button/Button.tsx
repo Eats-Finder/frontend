@@ -1,5 +1,11 @@
 "use client"
-import { SbuttonSize, Scenter, Scolors } from "@/styles/styleCore"
+import {
+  SbuttonSize,
+  Scenter,
+  Scolors,
+  SfontSize,
+  Stransition,
+} from "@/styles/styleCore"
 import React from "react"
 
 interface IButton extends React.ComponentPropsWithoutRef<"button"> {
@@ -10,7 +16,7 @@ interface IButton extends React.ComponentPropsWithoutRef<"button"> {
 const Button = ({ content, disabled, customStyle, ...props }: IButton) => {
   return (
     <button
-      className={`${Scenter} ${SbuttonSize.s} ${Scolors.bg.primary[400]} ${Scolors.text.white} rounded-[16px] typo-body-16 ${customStyle}`}
+      className={`${Scenter} ${SbuttonSize.s} ${Scolors.bg.primary[400]} ${Scolors.text.white} rounded-[16px] ${SfontSize[16]} hover:bg-primary-500 hover:text-white disabled:bg-primary-50 disabled:text-primary-200 ${Stransition} ${customStyle}`}
       disabled={disabled}
       {...props}
     >

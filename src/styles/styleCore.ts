@@ -87,6 +87,7 @@ const SbuttonSize = {
 
 const Scenter = "flex items-center justify-center"
 
-const Stransition = "transition-all"
+const Stransition =
+  "transition duration-200 ease-[cubic-bezier(.61,.14,.34,1.01)]"
 
 export { Scolors, SfontSize, Scenter, SbuttonSize, Stransition }
